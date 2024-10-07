@@ -5,8 +5,8 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  color: black;
-  background-color: white;
+  color: whitesmoke;
+  background-color:#322d31;
 }
 
 nav {
@@ -22,6 +22,7 @@ nav {
 }
 
 nav a {
+  background-color:darkorchid;
   display: inline-block;
   min-width: 9rem;
   padding: 0.5rem;
@@ -29,7 +30,7 @@ nav a {
   border: solid 1px #aaa;
   text-align: center;
   text-decoration: none;
-  color: #555;
+  color:black;
 }
 
 nav a[aria-current='page'] {
@@ -40,6 +41,11 @@ nav a[aria-current='page'] {
 main {
   padding: 1rem;
 }
+
+div {
+flex-wrap: nowrap;
+align-content: center;
+
 
 h1 {
   font-weight: bold;
@@ -55,4 +61,6 @@ font-size: 1.4rem;
 li {
   font-size: 1.04rem;
 font-family: monospace;
+}
+
 }
