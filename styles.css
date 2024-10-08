@@ -23,7 +23,7 @@ nav {
 }
 
 nav a {
-  background-color:darkorchid;
+  background-color:orchid;
   display: inline-block;
   min-width: 9rem;
   padding: 0.5rem;
@@ -45,8 +45,8 @@ main {
 
 div {
 flex-wrap: nowrap;
-align-content: center;
-
+text-align: center;
+}
 
 h1 {
   font-weight: bold;
@@ -64,4 +64,46 @@ li {
 font-family: monospace;
 }
 
+.WorkoutCategory {
+  display: flex;
+  flex-direction: column;
+  background-color:#322d31;
+}
+
+#page2title {
+  font-style: italic;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: beige;
+}
+.ChestWO { 
+  text-align: center;
+width: 180px;
+height: 30px;
+}
+#ChestWO1 {
+  color: darkviolet;
+  background-color: #000;
+}
+#ChestWO2 {
+  background-color: #000;
+  color: darkviolet;
+}
+
+#FlexboxImage {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
