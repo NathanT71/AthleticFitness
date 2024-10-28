@@ -12,6 +12,8 @@ body {
 h1 {
 text-align: end;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding-right: 510px;
+font-size: 3.7rem;
 }
 
 nav {
@@ -53,7 +55,7 @@ flex-wrap: nowrap;
 text-align: center;
 }
 
-h1 {
+h2 {
   font-weight: bold;
   font-size: 3rem;
 }
