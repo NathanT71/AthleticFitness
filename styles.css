@@ -9,11 +9,11 @@ body {
   background-color:#322d31;
 }
 
-h1 {
+h2 {
 text-align: end;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-padding-right: 510px;
-font-size: 3.7rem;
+font-family: fantasy;
+padding-right: 240px;
+font-size: 240px
 }
 
 nav {
@@ -89,28 +89,12 @@ div {
   justify-content: space-evenly;
 }
 
-.container {
+.img1 {
+  display: flex;
   flex-direction: row;
-  display: flex;
-  justify-content: space-evenly;
-  background-color: beige;
-}
-.ChestWO { 
   text-align: center;
-width: 180px;
-height: 30px;
-}
-#ChestWO1 {
-  color: darkviolet;
-  background-color: #000;
-}
-#ChestWO2 {
-  background-color: #000;
-  color: darkviolet;
-}
-
-#FlexboxImage {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
+  justify-content: space-evenly;
+  font-family: fantasy;
+  font-size: 65px;
+  color: grey;
 }
