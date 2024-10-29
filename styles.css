@@ -9,10 +9,11 @@ body {
   background-color:#322d31;
 }
 
-h1 {
-text-align: end;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-padding-right: 170px;
+.titletxt{
+  text-align: end;
+font-family:fantasy;
+padding-right: 480px;
+font-size: 80px;
 }
 
 nav {
@@ -78,38 +79,4 @@ font-family: monospace;
 
 #page2title {
   font-style: italic;
-}
-
-div {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.container {
-  flex-direction: row;
-  display: flex;
-  justify-content: space-evenly;
-  background-color: beige;
-}
-.ChestWO { 
-  text-align: center;
-width: 180px;
-height: 30px;
-}
-#ChestWO1 {
-  color: darkviolet;
-  background-color: #000;
-}
-#ChestWO2 {
-  background-color: #000;
-  color: darkviolet;
-}
-
-#FlexboxImage {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
 }
