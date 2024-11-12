@@ -9,11 +9,18 @@ body {
   background-color:#322d31;
 }
 
-.titletxt{
+h2 {
+text-align: end;
+font-family: fantasy;
+font-size: 2px
+}
+
+
+#HomeTitle {
   text-align: end;
-font-family:fantasy;
-padding-right: 480px;
-font-size: 80px;
+  font-family: fantasy;
+  font-size: 4rem;
+  padding-right: 480px;
 }
 
 nav {
@@ -55,7 +62,7 @@ flex-wrap: nowrap;
 text-align: center;
 }
 
-h1 {
+h2 {
   font-weight: bold;
   font-size: 3rem;
 }
@@ -79,4 +86,22 @@ font-family: monospace;
 
 #page2title {
   font-style: italic;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.img1 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  font-family: fantasy;
+  font-size: 65px;
+  color: grey;
 }
