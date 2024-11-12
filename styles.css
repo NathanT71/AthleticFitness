@@ -12,8 +12,15 @@ body {
 h2 {
 text-align: end;
 font-family: fantasy;
-padding-right: 240px;
-font-size: 240px
+font-size: 2px
+}
+
+
+h6 {
+  text-align: end;
+  font-family: fantasy;
+  font-size: 3rem;
+  padding-right: 480px;
 }
 
 nav {
