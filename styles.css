@@ -16,10 +16,10 @@ font-size: 2px
 }
 
 
-h6 {
+#HomeTitle {
   text-align: end;
   font-family: fantasy;
-  font-size: 3rem;
+  font-size: 4rem;
   padding-right: 480px;
 }
 
