@@ -12,15 +12,8 @@ body {
 h2 {
 text-align: end;
 font-family: fantasy;
-font-size: 2px
-}
-
-
-#HomeTitle {
-  text-align: end;
-  font-family: fantasy;
-  font-size: 4rem;
-  padding-right: 480px;
+padding-right: 240px;
+font-size: 240px
 }
 
 nav {
