@@ -98,3 +98,8 @@ div {
   font-size: 65px;
   color: grey;
 }
+
+.signin {
+  display: flex;
+text-align: left;
+}
