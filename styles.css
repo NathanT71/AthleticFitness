@@ -105,3 +105,11 @@ div {
   font-size: 65px;
   color: grey;
 }
+
+#si {
+  text-align: left;
+  font-size: 2.5rem;
+  padding-right: 1600px;
+  font-family: fantasy;
+}
+
