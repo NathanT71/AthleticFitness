@@ -81,7 +81,6 @@ font-family: monospace;
 .WorkoutCategory {
   display: flex;
   flex-direction: column;
-  background-color:#322d31;
 }
 
 #page2title {
@@ -103,7 +102,7 @@ div {
   justify-content: space-evenly;
   font-family: fantasy;
   font-size: 65px;
-  color: grey;
+  color:#48494b;
 }
 
 #si {
@@ -113,3 +112,7 @@ div {
   font-family: fantasy;
 }
 
+#table {
+  justify-content: center;
+  border-spacing: 5rem;
+}
