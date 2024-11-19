@@ -116,3 +116,8 @@ div {
   justify-content: center;
   border-spacing: 5rem;
 }
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+}

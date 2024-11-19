@@ -1,61 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Athletic Fitness</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav style="background-color: black;">
-      <a href="/" aria-current="page" style="color: darkorchid;">Home</a>
-      <a href="/page2.html">Upper Body</a>
-    </nav>
-    <main>
+
+<head>
+  <title>Athletic Fitness</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+  <nav style="background-color: black;">
+    <a href="/" aria-current="page" style="color: darkorchid;">Home</a>
+    <a href="/page2.html">Upper Body</a>
+  </nav>
+  <main>
+    <div class="header">
       <h1 id="HomeTitle" style="color: black;">Athletic Fitness</h1>
-      <div class="img1">
-        <img src="Images/thumbnail_image_123650291-removebg-preview.png" width="600px" height="600px">
-        <div>
-          <div> Why you should choose Athletic Fitness </div>
-          <div style="font-size: 2.5rem;">Athletic Fitness is a method of bodybuilding to encapture a frame like famous athletes like Leon Edwards</div>
-        </div>
+      <div>
+        <div class="signin">Sign in</div>
+        <form class="form">
+
+          <label>
+
+            Name: <input type="text" required>
+
+          </label>
+
+          <label>
+
+            Email: <input type="email" required name="email" id="email">
+
+          </label>
+
+          <input type="submit" style="width:20%" onclick="formsubmission()" />
+
+        </form>
       </div>
-      <div>Select a type of Workout
-        <select id="types">
-        </select>
-      </div>
-      <script>
-        const myArr = ["Chest", "Back", "Triceps", "Biceps"]
-        myArr.forEach((i) => {
-          console.log(i) // will print out values one by one
-        })
-        </script>
-      <table id="table">
-      <thead>
-        <tr>
-          <td><b>Workout Name</b></td>
-          <td><b>Body Part</b></td>
-          <td><b>Sets</b></td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Tricpes Pulldown</td>
-          <td>Tricpes</td>
-          <td>3x10</td>
-        </tr>
-      </tbody>
-      </table>
-      <script>
-        const workoutTypes = ["Chest","Back","Triceps","Biceps",]
-        const select = document.getElementById("types");
-        workoutTypes.forEach((type) => {
-          option = document.createElement("option");
-          option.value = type; 
-          option.text = type; 
-          select.appendChild(option);
-        })
-      </script>
-    </main>
-  </body>
-  </html>
+
+    </div>
+  </main>
+  <div class="img1">
+    <img src="Images/thumbnail_image_123650291-removebg-preview.png" width="600px" height="600px">
+    <div>
+      <div> Why you should choose Athletic Fitness </div>
+      <div style="font-size: 2.5rem;">Athletic Fitness is a method of bodybuilding to encapture a frame like famous
+        athletes like Leon Edwards</div>
+    </div>
+  </div>
+  <div>Select a type of Workout
+    <select id="types">
+    </select>
+  </div>
+  <script>
+    const myArr = ["Chest", "Back", "Triceps", "Biceps"]
+    myArr.forEach((i) => {
+      console.log(i) // will print out values one by one
+    })
+  </script>
+  <table id="table">
+    <thead>
+      <tr>
+        <td><b>Workout Name</b></td>
+        <td><b>Body Part</b></td>
+        <td><b>Sets</b></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Tricpes Pulldown</td>
+        <td>Tricpes</td>
+        <td>3x10</td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+    const workoutTypes = ["Chest", "Back", "Triceps", "Biceps",]
+    const select = document.getElementById("types");
+    workoutTypes.forEach((type) => {
+      option = document.createElement("option");
+      option.value = type;
+      option.text = type;
+      select.appendChild(option);
+    })
+  </script>
+  </main>
+</body>
+
+</html>
