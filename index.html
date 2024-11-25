@@ -15,7 +15,7 @@
   </nav>
   <main>
     <div class="header">
-      <h1 id="HomeTitle" style="color: black;">Athletic Fitness</h1>
+      <h1 id="HomeTitle" style="color: white;">Athletic Fitness</h1>
       <div>
         <div class="signin">Sign in</div>
         <form class="form">
@@ -49,14 +49,14 @@
           toggleButton.style.backgroundColor = '#000';
           toggleButton.style.color = '#fff';
           toggleButton.textContent = "Switch to Light Mode";
-          body.style["backgroundColor"] = "grey"
+          document.body.style["backgroundColor"] = "black";
         } else {
           document.body.classList.remove('dark-mode');
           document.body.classList.add('light-mode');
           toggleButton.style.backgroundColor = '#fff';
           toggleButton.style.color = '#000';
           toggleButton.textContent = "Switch to Dark Mode";
-          body.style["backgroundColor"] = "black"
+          document.body.style["backgroundColor"] = "grey";
         }
       });
     </script>  
