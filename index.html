@@ -11,7 +11,7 @@
 <body>
   <nav style="background-color: black;">
     <a href="/" aria-current="page" style="color: darkorchid;">Home</a>
-    <a href="/page2.html">Upper Body</a>
+    <a href="/page2.html">Workout Page</a>
   </nav>
   <main>
     <div class="header">
@@ -87,11 +87,6 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Tricpes Pulldown</td>
-        <td>Tricpes</td>
-        <td>3x10</td>
-      </tr>
     </tbody>
   </table>
   <script>
@@ -104,6 +99,37 @@
       select.appendChild(option);
     })
   </script>
+  <script>
+    const workOuts = [{
+      name:"Tricep Pulldowns",
+      type:"Triceps",
+      sets:"3x10",
+    },{
+      name:"Bench Press",
+      type:"Chest",
+      sets:"10,8,5",
+    }, {
+      name:"Lat Pulldown",
+      type:"Back",
+      sets:"2xFAILURE",
+    }, {
+      name:"Dumbbell Curls",
+      type:"Biceps",
+      sets:"2x10",
+    }]
+
+    const writetableRow = (table, workouts) => {
+      const newRow = table.insertRow();
+
+      newRow.innerHTML = `<tr id=${workouts.name}>
+        <td>${workouts.name}</td>
+        <td>${workouts.type}</td>
+        <td>${workouts.sets}</td>
+        </tr>`;
+      }
+      const tableBody = document.getElementsByTagName("tbody")[0];
+      writetableRow(tableBody, workOuts[1])
+      </script>
   </main>
 </body>
 
