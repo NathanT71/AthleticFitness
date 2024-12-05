@@ -64,16 +64,15 @@
     <img src="Images/thumbnail_image_123650291-removebg-preview.png" width="600px" height="600px">
     <div>
       <div> Why you should choose Athletic Fitness </div>
-      <div style="font-size: 2.5rem;">Athletic Fitness is a method of bodybuilding to encapture a frame like famous
-        athletes like Leon Edwards</div>
+      <div style="font-size: 2.5rem;">Athetic Fitness builds an aesthetic frame that best enables the most important human abilities being strength. speed. and stamina</div>
     </div>
   </div>
   <div>Select a type of Workout
-    <select id="types">
+    <select id="types" onchange="makeTable()">
     </select>
   </div>
   <script>
-    const myArr = ["Chest", "Back", "Triceps", "Biceps"]
+    const myArr = ["All","Chest", "Back", "Triceps", "Biceps"]
     myArr.forEach((i) => {
       console.log(i) // will print out values one by one
     })
@@ -90,7 +89,7 @@
     </tbody>
   </table>
   <script>
-    const workoutTypes = ["Chest", "Back", "Triceps", "Biceps",]
+    const workoutTypes = ["All","Chest", "Back", "Triceps", "Biceps",]
     const select = document.getElementById("types");
     workoutTypes.forEach((type) => {
       option = document.createElement("option");
@@ -129,6 +128,18 @@
       }
       const tableBody = document.getElementsByTagName("tbody")[0];
       writetableRow(tableBody, workOuts[1])
+
+      const makeTable = () => {
+        const tableBody = document.getElementsByTagName("tbody")[0];
+        tableBody.innerHTML = "";
+        if (select.value == "All") {
+        workouts.forEach((r)=>writeTableRow(tableBody,r));
+      } else {
+        const filtered = workOuts.filter((r) => select.value == r.workoutTypes)
+        filtered.forEach((r) => writeTableRow(tableBody,r))
+      }
+      }
+      writeTable()
       </script>
   </main>
 </body>
