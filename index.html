@@ -15,29 +15,7 @@
   </nav>
   <main>
     <div class="header">
-      <h1 id="HomeTitle" style="color: white;">Athletic Fitness</h1>
-      <div>
-        <div class="signin">Sign in</div>
-        <form class="form">
-
-          <label>
-
-            Name: <input type="text" required>
-
-          </label>
-
-          <label>
-
-            Email: <input type="email" required name="email" id="email">
-
-          </label>
-
-          <input type="submit" style="width:20%" onclick="formsubmission()" />
-
-        </form>
-      </div>
-
-    </div>
+      <h1 id="HomeTitle" style="color: darkorchid;">Athletic Fitness</h1>
   </main>
     <button id="toggleButton">Night/Morning Mode </button>
     <script>
@@ -46,10 +24,10 @@
         if (document.body.classList.contains('light-mode')) {
           document.body.classList.remove('light-mode');
           document.body.classList.add('dark-mode');
-          toggleButton.style.backgroundColor = '#000';
+          toggleButton.style.backgroundColor = '#322d31';
           toggleButton.style.color = '#fff';
           toggleButton.textContent = "Switch to Light Mode";
-          document.body.style["backgroundColor"] = "black";
+          document.body.style["backgroundColor"] = "#322d31";
         } else {
           document.body.classList.remove('dark-mode');
           document.body.classList.add('light-mode');
@@ -67,81 +45,6 @@
       <div style="font-size: 2.5rem;">Athetic Fitness builds an aesthetic frame that best enables the most important human abilities being strength. speed. and stamina</div>
     </div>
   </div>
-  <div>Select a type of Workout
-    <select id="types" onchange="makeTable()">
-    </select>
-  </div>
-  <script>
-    const myArr = ["All","Chest", "Back", "Triceps", "Biceps"]
-    myArr.forEach((i) => {
-      console.log(i) // will print out values one by one
-    })
-  </script>
-  <table id="table">
-    <thead>
-      <tr>
-        <td><b>Workout Name</b></td>
-        <td><b>Body Part</b></td>
-        <td><b>Sets</b></td>
-      </tr>
-    </thead>
-    <tbody>
-    </tbody>
-  </table>
-  <script>
-    const workoutTypes = ["All","Chest", "Back", "Triceps", "Biceps",]
-    const select = document.getElementById("types");
-    workoutTypes.forEach((type) => {
-      option = document.createElement("option");
-      option.value = type;
-      option.text = type;
-      select.appendChild(option);
-    })
-  </script>
-  <script>
-    const workOuts = [{
-      name:"Tricep Pulldowns",
-      type:"Triceps",
-      sets:"3x10",
-    },{
-      name:"Bench Press",
-      type:"Chest",
-      sets:"10,8,5",
-    }, {
-      name:"Lat Pulldown",
-      type:"Back",
-      sets:"2xFAILURE",
-    }, {
-      name:"Dumbbell Curls",
-      type:"Biceps",
-      sets:"2x10",
-    }]
-
-    const writetableRow = (table, workouts) => {
-      const newRow = table.insertRow();
-
-      newRow.innerHTML = `<tr id=${workouts.name}>
-        <td>${workouts.name}</td>
-        <td>${workouts.type}</td>
-        <td>${workouts.sets}</td>
-        </tr>`;
-      }
-      const tableBody = document.getElementsByTagName("tbody")[0];
-      writetableRow(tableBody, workOuts[1])
-
-      const makeTable = () => {
-        const tableBody = document.getElementsByTagName("tbody")[0];
-        tableBody.innerHTML = "";
-        if (select.value == "All") {
-        workouts.forEach((r)=>writeTableRow(tableBody,r));
-      } else {
-        const filtered = workOuts.filter((r) => select.value == r.workoutTypes)
-        filtered.forEach((r) => writeTableRow(tableBody,r))
-      }
-      }
-      writeTable()
-      </script>
   </main>
 </body>
-
 </html>

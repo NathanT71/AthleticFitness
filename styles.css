@@ -17,10 +17,9 @@ font-size: 2px
 
 
 #HomeTitle {
-  text-align: end;
+  text-align: center;
   font-family: fantasy;
   font-size: 4rem;
-  padding-right: 480px;
 }
 
 nav {
@@ -85,6 +84,7 @@ font-family: monospace;
 
 #page2title {
   font-style: italic;
+  text-align: center;
 }
 
 div {
@@ -102,7 +102,7 @@ div {
   justify-content: space-evenly;
   font-family: fantasy;
   font-size: 65px;
-  color:#48494b;
+  color:#593392;
 }
 
 #si {
@@ -120,4 +120,11 @@ div {
 .header {
   display: flex;
   flex-direction: row-reverse;
+}
+
+#WorkoutPageText {
+  display: flex;
+  text-align: center;
+  font-size:2rem;
+  font-family: fantasy;
 }
