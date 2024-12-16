@@ -128,3 +128,21 @@ div {
   font-size:2rem;
   font-family: fantasy;
 }
+
+body {
+  background-image: url('Images/blurry-gym-background-with-modern-sports-equipment-fitness-center-concept-gym-photography-blurry-background-fitness-center-modern-equipment_918839-75018.avif'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  font-family: fantasy;
+  color: white; 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
