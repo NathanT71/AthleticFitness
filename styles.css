@@ -125,24 +125,26 @@ div {
 #WorkoutPageText {
   display: flex;
   text-align: center;
-  font-size:2rem;
+  font-size:2.5rem;
   font-family: fantasy;
+  outline-width: 5rem;
 }
 
-body {
+#WorkoutSubText {
+  display: flex;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.container {
   background-image: url('Images/blurry-gym-background-with-modern-sports-equipment-fitness-center-concept-gym-photography-blurry-background-fitness-center-modern-equipment_918839-75018.avif'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
-  margin: 0;
+  width: 100vw;
+  height: 100vh;
   font-family: fantasy;
-  color: white; 
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  color:white;
   text-align: center;
 }
+
