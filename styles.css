@@ -9,6 +9,20 @@ body {
   background-color:#322d31;
 }
 
+h2 {
+text-align: end;
+font-family: fantasy;
+font-size: 2px
+}
+
+
+#HomeTitle {
+  text-align: end;
+  font-family: fantasy;
+  font-size: 4rem;
+  padding-right: 480px;
+}
+
 nav {
   font-family: fantasy;
   display: flex;
@@ -48,7 +62,7 @@ flex-wrap: nowrap;
 text-align: center;
 }
 
-h1 {
+h2 {
   font-weight: bold;
   font-size: 3rem;
 }
@@ -82,28 +96,20 @@ div {
   justify-content: space-evenly;
 }
 
-.container {
-  flex-direction: row;
+.img1 {
   display: flex;
-  justify-content: space-evenly;
-  background-color: beige;
-}
-.ChestWO { 
+  flex-direction: row;
   text-align: center;
-width: 180px;
-height: 30px;
-}
-#ChestWO1 {
-  color: darkviolet;
-  background-color: #000;
-}
-#ChestWO2 {
-  background-color: #000;
-  color: darkviolet;
+  justify-content: space-evenly;
+  font-family: fantasy;
+  font-size: 65px;
+  color: grey;
 }
 
-#FlexboxImage {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
+#si {
+  text-align: left;
+  font-size: 2.5rem;
+  padding-right: 1600px;
+  font-family: fantasy;
 }
+
