@@ -17,10 +17,9 @@ font-size: 2px
 
 
 #HomeTitle {
-  text-align: end;
+  text-align: center;
   font-family: fantasy;
   font-size: 4rem;
-  padding-right: 480px;
 }
 
 nav {
@@ -81,11 +80,11 @@ font-family: monospace;
 .WorkoutCategory {
   display: flex;
   flex-direction: column;
-  background-color:#322d31;
 }
 
 #page2title {
   font-style: italic;
+  text-align: center;
 }
 
 div {
@@ -103,7 +102,7 @@ div {
   justify-content: space-evenly;
   font-family: fantasy;
   font-size: 65px;
-  color: grey;
+  color:#593392;
 }
 
 #si {
@@ -113,3 +112,37 @@ div {
   font-family: fantasy;
 }
 
+#table {
+  justify-content: center;
+  border-spacing: 5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#WorkoutPageText {
+  display: flex;
+  text-align: center;
+  font-size:2rem;
+  font-family: fantasy;
+}
+
+body {
+  background-image: url('Images/blurry-gym-background-with-modern-sports-equipment-fitness-center-concept-gym-photography-blurry-background-fitness-center-modern-equipment_918839-75018.avif'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  font-family: fantasy;
+  color: white; 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}

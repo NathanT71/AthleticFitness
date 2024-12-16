@@ -1,25 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Athletic Fitness</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav style="background-color: black;">
-      <a href="/" aria-current="page" style="color: darkorchid;">Home</a>
-      <a href="/page2.html">Upper Body</a>
-    </nav>
-    <main>
-      <h1 id="HomeTitle" style="color: black;">Athletic Fitness</h1>
-      <div class="img1">
-        <img src="Images/thumbnail_image_123650291-removebg-preview.png" width="600px" height="600px">
-        <div>
-          <div> Why you should choose Athletic Fitness </div>
-          <div style="font-size: 2.5rem;">Athletic Fitness is a method of bodybuilding to encapture a frame like famous athletes like Leon Edwards</div>
-        </div>
-      </div>
-    </main>
-  </body>
-  </html>
+
+<head>
+  <title>Athletic Fitness</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+  <nav style="background-color: black;">
+    <a href="/" aria-current="page" style="color: darkorchid;">Home</a>
+    <a href="/page2.html">Workout Page</a>
+  </nav>
+  <main>
+    <div class="header">
+      <h1 id="HomeTitle" style="color: darkorchid;">Athletic Fitness</h1>
+  </main>
+    <button id="toggleButton">Night/Morning Mode </button>
+    <script>
+      const toggleButton = document.getElementById('toggleButton');
+      toggleButton.addEventListener('click', function () {
+        if (document.body.classList.contains('light-mode')) {
+          document.body.classList.remove('light-mode');
+          document.body.classList.add('dark-mode');
+          toggleButton.style.backgroundColor = '#322d31';
+          toggleButton.style.color = '#fff';
+          toggleButton.textContent = "Switch to Light Mode";
+          document.body.style["backgroundColor"] = "#322d31";
+        } else {
+          document.body.classList.remove('dark-mode');
+          document.body.classList.add('light-mode');
+          toggleButton.style.backgroundColor = '#fff';
+          toggleButton.style.color = '#000';
+          toggleButton.textContent = "Switch to Dark Mode";
+          document.body.style["backgroundColor"] = "grey";
+        }
+      });
+    </script>  
+    <div class="img1">
+    <img src="Images/thumbnail_image_123650291-removebg-preview.png" width="600px" height="600px">
+    <div>
+      <div> Why you should choose Athletic Fitness </div>
+      <div style="font-size: 2.5rem;">Athetic Fitness builds an aesthetic frame that best enables the most important human abilities being strength. speed. and stamina</div>
+    </div>
+  </div>
+  </main>
+</body>
+</html>
