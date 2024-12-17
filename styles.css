@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  color: whitesmoke;
+  color: white;
   background-color:#322d31;
 }
 
@@ -127,16 +127,18 @@ div {
   text-align: center;
   font-size:2.5rem;
   font-family: fantasy;
-  outline-width: 5rem;
+  outline-color: #000;
+  outline-width: 2rem;
 }
 
 #WorkoutSubText {
   display: flex;
   text-align: center;
   font-size: 2rem;
+  outline: 10px #000;
 }
 
-.container {
+.picture {
   background-image: url('Images/blurry-gym-background-with-modern-sports-equipment-fitness-center-concept-gym-photography-blurry-background-fitness-center-modern-equipment_918839-75018.avif'); 
   background-size: cover;
   background-position: center;
@@ -146,5 +148,11 @@ div {
   font-family: fantasy;
   color:white;
   text-align: center;
+}
+
+.container {
+  background-color: #000;
+  height: 80px;
+  justify-content: center;
 }
 

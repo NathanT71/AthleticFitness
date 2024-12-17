@@ -9,35 +9,17 @@
 </head>
 
 <body>
+  
   <nav style="background-color: black;">
     <a href="/" aria-current="page" style="color: darkorchid;">Home</a>
     <a href="/page2.html">Workout Page</a>
   </nav>
+  <div class="picture">
   <main>
     <div class="header">
       <h1 id="HomeTitle" style="color: darkorchid;">Athletic Fitness</h1>
   </main>
-    <button id="toggleButton">Night/Morning Mode </button>
-    <script>
-      const toggleButton = document.getElementById('toggleButton');
-      toggleButton.addEventListener('click', function () {
-        if (document.body.classList.contains('light-mode')) {
-          document.body.classList.remove('light-mode');
-          document.body.classList.add('dark-mode');
-          toggleButton.style.backgroundColor = '#322d31';
-          toggleButton.style.color = '#fff';
-          toggleButton.textContent = "Switch to Light Mode";
-          document.body.style["backgroundColor"] = "#322d31";
-        } else {
-          document.body.classList.remove('dark-mode');
-          document.body.classList.add('light-mode');
-          toggleButton.style.backgroundColor = '#fff';
-          toggleButton.style.color = '#000';
-          toggleButton.textContent = "Switch to Dark Mode";
-          document.body.style["backgroundColor"] = "grey";
-        }
-      });
-    </script>  
+   
     <div class="img1">
     <img src="Images/thumbnail_image_123650291-removebg-preview.png" width="600px" height="600px">
     <div>
@@ -45,6 +27,7 @@
       <div style="font-size: 2.5rem;">Athetic Fitness builds an aesthetic frame that best enables the most important human abilities being strength. speed. and stamina</div>
     </div>
   </div>
+</div>
   </main>
 </body>
 </html>
