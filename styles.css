@@ -127,15 +127,22 @@ div {
   text-align: center;
   font-size:2.5rem;
   font-family: fantasy;
-  outline-color: #000;
-  outline-width: 2rem;
+  text-shadow: 
+  2px 2px 0 black, /* Bottom-right */
+ -2px 2px 0 black, /* Bottom-left */
+  2px -2px 0 black, /* Top-right */
+ -2px -2px 0 black; /* Top-left */
 }
 
 #WorkoutSubText {
   display: flex;
   text-align: center;
   font-size: 2rem;
-  outline: 10px #000;
+  text-shadow: 
+    2px 2px 0 black, /* Bottom-right */
+   -2px 2px 0 black, /* Bottom-left */
+    2px -2px 0 black, /* Top-right */
+   -2px -2px 0 black; /* Top-left */
 }
 
 .picture {
@@ -144,7 +151,8 @@ div {
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
+  min-height: max-content;
   font-family: fantasy;
   color:white;
   text-align: center;
@@ -156,3 +164,50 @@ div {
   justify-content: center;
 }
 
+
+#fitnessTable {
+  text-shadow: 
+  1.5px 1.5px 0 black, /* Bottom-right */
+ -1.5px 1.5px 0 black, /* Bottom-left */
+  1.5px -1.5px 0 black, /* Top-right */
+ -1.5px -1.5px 0 black; /* Top-left */
+  justify-content: center;
+  text-align: center;
+}
+body {
+  font-family: fantasy;
+  margin: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+th {
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: black;
+}
+.filter-buttons {
+  margin-bottom: 20px;
+}
+.filter-buttons button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.filter-buttons button:hover {
+  background-color: #0056b3;
+}

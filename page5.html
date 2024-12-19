@@ -10,5 +10,49 @@
             <a href="/" style="background-color: violet;">Home</a>
             <a href="/page2.html" aria-current="page" style="background-color: violet;">Workout Selector</a>
             <a href="/page5.html" style="background-color: white;">Back</a>
-    </body>
-</html>
+      </nav>
+      <div style="color: blueviolet;">
+        <main>
+            <button id="toggleButton">Night/Morning Mode </button>
+            <script>
+              const toggleButton = document.getElementById('toggleButton');
+              toggleButton.addEventListener('click', function () {
+                if (document.body.classList.contains('light-mode')) {
+                  document.body.classList.remove('light-mode');
+                  document.body.classList.add('dark-mode');
+                  toggleButton.style.backgroundColor = '#322d31';
+                  toggleButton.style.color = '#fff';
+                  toggleButton.textContent = "Switch to Darker Mode";
+                  document.body.style["backgroundColor"] = "#322d31";
+                } else {
+                  document.body.classList.remove('dark-mode');
+                  document.body.classList.add('light-mode');
+                  toggleButton.style.backgroundColor = 'grey';
+                  toggleButton.style.color = 'white';
+                  toggleButton.textContent = "Switch to Lighter Mode";
+                  document.body.style["backgroundColor"] = "black";
+                }
+              });
+            </script>
+    <h2 id="page2title">Upper Body Workouts</h2>
+      <h4>Upper Body Workouts</h4>
+        <div class="WorkoutCategory"><p class="WorkoutCategory">Chest Workouts</p>
+          <li>Bench Press</li>
+            <a href="https://youtu.be/gRVjAtPip0Y?si=YUiilRN63AVbgt2G">How To Bench Press Properly</a>
+          <li>Incline Dumbell Press</li>
+        <a href="https://youtu.be/8iPEnn-ltC8?si=eQLY5PnYubHubRjH">Incline Dumbell Press Set-Up</a></div>
+            
+        </main>
+      </div>
+      <div style="color: blueviolet;">
+        <main>
+    
+    <div class="WorkoutCategory"><p>Tricep Workouts</p>
+      <li>Tricep Extension</li>
+        <a href="https://youtu.be/JDEDaZTEzGE?si=N_XWmUd_Coa1Q4ZD">Rope Tricep Extension</a>
+      <li>Smith machine Incline Bench Press</li>
+    <a href="https://youtu.be/b8DqTO6ak0k?si=QxxDfaip5mTFRT0F">How to Set up Smith Machine Press</a></div>
+      </div>
+      </main>
+      </body>
+    </html>

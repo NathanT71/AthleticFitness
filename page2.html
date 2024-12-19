@@ -26,7 +26,100 @@
         <p id="WorkoutPageText">Welcome to the workout page! This guide will help you get started on building your own unique physique.</p>
         <p id="WorkoutSubText">The key to gaining your ideal physique is lifting weights that you can handle, while ensuring you maintain great technique throughout each exercise.</p>
         <p id="WorkoutSubText">You also need to progressively overload which is just adding more weight when the weight you are comfortable with seems too easy or light. It also does not have to be a substantial amount of added weight, 5 or 10 pounds is more than enough.</p>
+
+    <h1 style="color: black;">Rep Range Table</h1>
+
+  <div class="filter-buttons">
+        <button onclick="filterTable('Building Strength')">Building Strength</button>
+        <button onclick="filterTable('Losing Weight')">Losing Weight</button>
+        <button onclick="filterTable('Gaining Muscle')">Gaining Muscle</button>
+        <button onclick="resetTable()">Show All</button>
     </div>
-</main> 
+
+    <table id="fitnessTable">
+        <thead>
+            <tr>
+                <th>Goal</th>
+                <th>Workout Type</th>
+                <th>Example Exercises</th>
+                <th>Key Tips</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be dynamically generated here -->
+        </tbody>
+    </table>
+
+    <script>
+        // Array of fitness plans
+        const fitnessPlans = [
+            {
+                goal: 'Building Strength',
+                workoutType: 'Heavy Lifting (Low Reps)',
+                exercises: ['Squats', 'Deadlifts', 'Bench Press'],
+                tips: 'Focus on compound lifts, rest 2-3 minutes between sets, progressive overload.'
+            },
+            {
+                goal: 'Losing Weight',
+                workoutType: 'High-Intensity Cardio & Circuit Training',
+                exercises: ['HIIT (Sprints)', 'Bodyweight Circuits', 'Rowing Machine'],
+                tips: 'Maintain a calorie deficit, keep sessions short and intense, and prioritize consistency.'
+            },
+            {
+                goal: 'Gaining Muscle',
+                workoutType: 'Moderate Lifting (8-12 Reps)',
+                exercises: ['Bicep Curls', 'Pull-Ups', 'Dumbbell Press'],
+                tips: 'Focus on hypertrophy, eat a protein-rich diet, and rest 60-90 seconds between sets.'
+            }
+        ];
+
+        // Function to populate the table dynamically
+        function populateTable(data) {
+            const tableBody = document.getElementById('fitnessTable').querySelector('tbody');
+            tableBody.innerHTML = ''; // Clear existing rows
+
+            data.forEach(plan => {
+                const row = document.createElement('tr');
+
+                // Create cells for each property
+                const goalCell = document.createElement('td');
+                goalCell.textContent = plan.goal;
+
+                const workoutTypeCell = document.createElement('td');
+                workoutTypeCell.textContent = plan.workoutType;
+
+                const exercisesCell = document.createElement('td');
+                exercisesCell.innerHTML = `<ul>${plan.exercises.map(ex => `<li>${ex}</li>`).join('')}</ul>`;
+
+                const tipsCell = document.createElement('td');
+                tipsCell.textContent = plan.tips;
+
+                // Append cells to the row
+                row.appendChild(goalCell);
+                row.appendChild(workoutTypeCell);
+                row.appendChild(exercisesCell);
+                row.appendChild(tipsCell);
+
+                // Append the row to the table body
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Function to filter the table
+        function filterTable(goal) {
+            const filteredPlans = fitnessPlans.filter(plan => plan.goal === goal);
+            populateTable(filteredPlans);
+        }
+
+        // Function to reset the table to show all rows
+        function resetTable() {
+            populateTable(fitnessPlans);
+        }
+
+        // Initial population of the table
+        populateTable(fitnessPlans);
+    </script>
+    </div>
+</main>     
   </body>
 </html>
