@@ -211,3 +211,7 @@ tr:hover {
 .filter-buttons button:hover {
   background-color: #0056b3;
 }
+
+.WorkoutCategory {
+  font-size: 1.3rem;
+}
