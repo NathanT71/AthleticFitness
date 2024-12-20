@@ -20,6 +20,11 @@ font-size: 2px
   text-align: center;
   font-family: fantasy;
   font-size: 4rem;
+  text-shadow: 
+  2px 2px 0 black, /* Bottom-right */
+ -2px 2px 0 black, /* Bottom-left */
+  2px -2px 0 black, /* Top-right */
+ -2px -2px 0 black; /* Top-left */
 }
 
 nav {
@@ -93,6 +98,11 @@ div {
   text-align: center;
   align-items: center;
   justify-content: space-evenly;
+  text-shadow: 
+    2px 2px 0 black, /* Bottom-right */
+   -2px 2px 0 black, /* Bottom-left */
+    2px -2px 0 black, /* Top-right */
+   -2px -2px 0 black; /* Top-left */
 }
 
 .img1 {
